@@ -1,0 +1,25 @@
+:root{--bg:#070b15;--panel:#101a2c;--edge:rgba(147,181,229,.17);--white:#f3f7ff;--muted:#acb9cc;--electric:#4db7ff}
+*{box-sizing:border-box}body{margin:0;color:var(--white);font-family:Inter,Arial,sans-serif;background:var(--bg);line-height:1.7}
+a{color:inherit;text-decoration:none}.container{width:min(1000px,calc(100% - 32px));margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,transparent,#2b7cdb 24%,#c8eeff 50%,#3287ea 78%,transparent)}
+.header{position:sticky;top:0;z-index:9;background:rgba(7,12,23,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(122,170,225,.12)}
+.header .container{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand strong{font-family:'Barlow Condensed',sans-serif;letter-spacing:.07em;font-size:23px;font-weight:800;display:block;line-height:1}
+.brand small{font-size:10px;font-weight:700;letter-spacing:.22em;color:#93bde9}
+.navcall,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(130deg,#117be7,#4cbdff);border:1px solid #7ed8ff;padding:12px 18px}
+.btn{padding:16px 26px;font-size:15px}.btn-outline{background:transparent;border:1px solid #536984}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.05;margin:0 0 14px;text-transform:uppercase}
+h1{font-size:clamp(40px,7vw,72px);font-weight:900}h2{font-size:clamp(28px,4.5vw,40px);margin-top:8px}h3{font-size:22px}
+.eyebrow{color:#b9deff;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.hero{padding:56px 0 44px;border-bottom:1px solid #24344c;background:linear-gradient(117deg,#080d18,#0b152a 62%,#0a1834)}
+.hero p{color:#becadd;font-size:17px;max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+section{padding:44px 0;border-bottom:1px solid #18243a}p,li{color:#c3cfdf}ul{padding-left:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:20px}
+.card p{margin:0}.towns{columns:2;column-gap:24px;padding-left:18px}@media(min-width:700px){.towns{columns:3}}
+details{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}details p{margin:10px 0 0}
+.more a{color:var(--electric);font-weight:700}footer{padding:30px 0 90px;color:var(--muted);font-size:14px}
+footer a{color:#c4d1e2}footer nav{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:10px}
+.callbar{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(7,12,23,.95);border-top:1px solid #24344c;display:flex;justify-content:center}
+.callbar a{width:min(480px,100%)}
